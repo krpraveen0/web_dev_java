@@ -3,7 +3,7 @@ name: Deploy to Google App Engine
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -28,6 +28,7 @@ jobs:
       uses: google-github-actions/setup-gcloud@v1
       with:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_email: ${{ secrets.GCP_SERVICE_ACCOUNT_EMAIL }}
 
     - name: Deploy to App Engine
       run: |
