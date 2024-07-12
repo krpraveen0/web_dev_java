@@ -19,4 +19,14 @@
     <servlet-name>HelloWorldServlet</servlet-name>
     <url-pattern>/helloServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description>Servlet component to perform airthematic calculations</description>
+    <display-name>CalculatorServlet</display-name>
+    <servlet-name>CalculatorServlet</servlet-name>
+    <servlet-class>com.praveen.trainings.servlets.CalculatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalculatorServlet</servlet-name>
+    <url-pattern>/calculator</url-pattern>
+  </servlet-mapping>
 </web-app>
